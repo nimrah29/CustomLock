@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8d9e8, #d9eaf8);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #5b21b6;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+#generated-password {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2f855a;
+  word-wrap: break-word;
+}
+
+#strength-output {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.divider {
+  margin: 25px 0;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  opacity: 0.6;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.pw-visibility-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pw-visibility-group input[type="password"],
+.pw-visibility-group input[type="text"] {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.pw-visibility-group button {
+  width: 40px;
+  padding: 0;
+  font-size: 20px;
+  margin-top: 0;
+  background: none;
+  color: #7c3aed;
+  border: none;
+  transition: background 0.2s;
+}
+
+.pw-visibility-group button:hover {
+  background: #f8f9fa;
+  color: #5b21b6;
+}
+
+#generated-password-group {
+  margin-top: 12px;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 140px;
+  margin-left: -70px;
+  background-color: #323232;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  z-index: 5;
+  left: 50%;
+  bottom: 40px;
+  font-size: 15px;
+  transition: visibility 0s, opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.security-tip {
+  margin-top: 20px;
+  color: #b76f00;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 16px;
+    max-width: 95vw;
+  }
+  input, select, button {
+    font-size: 15px;
+  }
+}

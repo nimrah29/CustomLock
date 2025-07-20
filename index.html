@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength & Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" role="main">
+    <h2>🔐 Password Strength Checker & Generator</h2>
+
+    <!-- Strength Checker Section -->
+    <div class="section" aria-label="Password Strength Checker">
+      <label for="username">Username</label>
+      <input type="text" id="username" aria-label="Username" placeholder="Enter your username" autocomplete="username" />
+
+      <label for="checkPassword">Check Your Password</label>
+      <div class="pw-visibility-group">
+        <input type="password" id="checkPassword" placeholder="Enter your password" aria-label="Password to check" />
+        <button id="toggleCheckVisibility" type="button" aria-label="Show or hide password">👁️</button>
+      </div>
+      <p id="strength-output">Strength: -</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Generator Section -->
+    <div class="section" aria-label="Password Generator">
+      <label for="theme">Choose a Theme</label>
+      <select id="theme" aria-label="Theme">
+        <option value="">-- Select Theme --</option>
+        <option value="space">🚀 Space</option>
+        <option value="anime">🎌 Anime</option>
+        <option value="animals">🐾 Animals</option>
+        <option value="food">🍕 Food</option>
+        <option value="tech">💻 Tech</option>
+        <option value="fantasy">🐉 Fantasy</option>
+        <option value="moods">🎭 Moods</option>
+        <option value="bts">💜 BTS</option>
+      </select>
+      <small id="theme-preview" style="display:block; margin-top:5px; color:#666;"></small>
+
+      <label for="keywords">Or Enter Custom Keywords</label>
+      <input type="text" id="keywords" placeholder="e.g., ninja, sunset" />
+
+      <label for="length">Password Length</label>
+      <input type="number" id="length" min="8" max="20" value="12" />
+
+      <button id="generateBtn" type="button">🎲 Generate Password</button>
+      <button id="copyBtn" type="button">📋 Copy Password</button>
+
+      <div id="generated-password-group">
+        <div id="generated-password"></div>
+        <div class="pw-visibility-group" id="genPwVisibilityGroup" style="display:none;">
+          <input type="password" id="generatedPasswordInput" readonly />
+          <button id="toggleGenVisibility" type="button" aria-label="Show or hide generated password">👁️</button>
+        </div>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="alert"></div>
+    <div class="security-tip">
+      <small>⚠️ Never reuse generated passwords for critical accounts.</small>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
