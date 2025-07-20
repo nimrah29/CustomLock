@@ -1,6 +1,6 @@
 # CustomLock
 
-is a modern, fun, and user-friendly web app for generating strong passwords and evaluating their security in real time. You can create custom passwords based on themed words or your own keywords, check password strength instantly, and securely copy your new password—all in a beautifully designed interface.
+It is a modern, fun, and user-friendly web app for generating strong passwords and evaluating their security in real time. You can create custom passwords based on themed words or your own keywords, check password strength instantly, and securely copy your new password—all in a beautifully designed interface.
 
 Features
 Password Strength Checker
@@ -28,3 +28,5 @@ Show/hide password with a single click (eye icon)
 Copy password with a non-blocking toast notification
 
 Security tip: reminding users not to reuse generated passwords for critical accounts
+
+live demo:
