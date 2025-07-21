@@ -7,22 +7,22 @@ A sleek and interactive **web application** that allows users to:
 
 ---
 
-## 🌟 Features
+##  Features
 
-✅ **Password Strength Checker**  
+ **Password Strength Checker**  
 - Live feedback on password strength  
 - Warns if the password matches or includes the username  
 - Uses length, character mix (uppercase, lowercase, digits, symbols) to evaluate strength  
 - Extra boost for longer passwords (16+ characters)
 
-✅ **Personalized Password Generator**  
-- Choose from creative themes: `Space`, `Anime`, `Animals`, `Food`, `Tech`, `Fantasy`, `Moods`, and `BTS`  
+ **Personalized Password Generator**  
+- Choose from creative themes: `Space`, `Anime`, `Animals`etc
 - Or enter **custom keywords** for fun, meaningful passwords  
 - Adjustable password length (8–20 characters)  
 - Ensures your username is excluded from generated passwords  
 - Automatically adds symbols and numbers for enhanced security  
 
-✅ **Accessibility & UX**  
+**Accessibility & UX**  
 - Password visibility toggle (👁️ / 🙈)  
 - Keyboard accessible (Enter key to copy password)  
 - Responsive design for all devices  
