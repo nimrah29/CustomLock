@@ -29,4 +29,7 @@ Copy password with a non-blocking toast notification
 
 Security tip: reminding users not to reuse generated passwords for critical accounts
 
-live demo:
+## 🔐 Live Demo
+
+[Click here to visit the app](https://customlock.netlify.app)
+
