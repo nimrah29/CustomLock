@@ -1,33 +1,34 @@
 # CustomLock
 
-It is a modern, fun, and user-friendly web app for generating strong passwords and evaluating their security in real time. You can create custom passwords based on themed words or your own keywords, check password strength instantly, and securely copy your new password—all in a beautifully designed interface.
+A sleek and interactive **web application** that allows users to:
+- Check the strength of any password based on multiple criteria
+- Generate strong, customizable, theme-based passwords using keywords, emojis, and more
+- Improve security awareness through real-time feedback and tips
 
-Features
-Password Strength Checker
+---
 
-Live feedback as you type, with visual strength and color indicators
+## 🌟 Features
 
-Checks similarity to username to prevent weak passwords
+✅ **Password Strength Checker**  
+- Live feedback on password strength  
+- Warns if the password matches or includes the username  
+- Uses length, character mix (uppercase, lowercase, digits, symbols) to evaluate strength  
+- Extra boost for longer passwords (16+ characters)
 
-Password Generator
+✅ **Personalized Password Generator**  
+- Choose from creative themes: `Space`, `Anime`, `Animals`, `Food`, `Tech`, `Fantasy`, `Moods`, and `BTS`  
+- Or enter **custom keywords** for fun, meaningful passwords  
+- Adjustable password length (8–20 characters)  
+- Ensures your username is excluded from generated passwords  
+- Automatically adds symbols and numbers for enhanced security  
 
-Select a theme (e.g., Space, Anime, Animals, Tech, etc.) for creative password ideas
-
-Add your own keywords to personalize passwords
-
-Choose password length (8–20 characters)
-
-Built-in symbol and number inclusion for strength
-
-Accessibility & Usability
-
-Responsive design, works great on desktop and mobile
-
-Show/hide password with a single click (eye icon)
-
-Copy password with a non-blocking toast notification
-
-Security tip: reminding users not to reuse generated passwords for critical accounts
+✅ **Accessibility & UX**  
+- Password visibility toggle (👁️ / 🙈)  
+- Keyboard accessible (Enter key to copy password)  
+- Responsive design for all devices  
+- ARIA attributes and roles for screen reader support  
+- Friendly copy-to-clipboard feedback using a toast popup  
+- Security tip warning not to reuse passwords
 
 ## 🔐 Live Demo
 
